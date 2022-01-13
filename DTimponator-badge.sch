@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "DT imponator badge"
+Date "2022-01-10"
+Rev "2.0"
 Comp ""
-Comment1 ""
-Comment2 ""
+Comment1 "github.com/hackerspace-ntnu/Coglight-badge-THT"
+Comment2 "Fork of Hackerspace imponator"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -381,17 +381,6 @@ F 3 "" H 1550 2450 50  0001 C CNN
 	1    1550 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L MCU_Microchip_ATtiny:ATtiny84A-PU U1
-U 1 1 5FC84D81
-P 4500 1700
-F 0 "U1" H 3971 1746 50  0000 R CNN
-F 1 "ATtiny84A-PU" H 3971 1655 50  0000 R CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4500 1700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 4500 1700 50  0001 C CNN
-	1    4500 1700
-	1    0    0    -1  
-$EndComp
 Text Label 5800 1100 2    50   ~ 0
 source1
 Text Label 5800 1200 2    50   ~ 0
@@ -492,8 +481,6 @@ F 3 "" H 10000 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 2300 9500 2300
-Wire Wire Line
 	8800 1600 8800 2000
 Wire Wire Line
 	8800 2000 9500 2000
@@ -591,10 +578,6 @@ Wire Wire Line
 	6400 3400 6500 3400
 Wire Wire Line
 	7900 3400 8000 3400
-Wire Wire Line
-	5900 2200 5100 2200
-Wire Wire Line
-	7400 2100 5100 2100
 Wire Wire Line
 	7500 3400 7400 3400
 Wire Wire Line
@@ -724,4 +707,22 @@ F 3 "" H 2850 1950 50  0001 C CNN
 	1    2850 1950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7400 2100 5100 2100
+Wire Wire Line
+	5900 2200 5100 2200
+Wire Wire Line
+	5100 2300 9500 2300
+$Comp
+L MCU_Microchip_ATtiny:ATtiny84A-PU U1
+U 1 1 5FC84D81
+P 4500 1700
+F 0 "U1" H 3971 1746 50  0000 R CNN
+F 1 "ATtiny84A-PU" H 3971 1655 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4500 1700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 2000
 $EndSCHEMATC

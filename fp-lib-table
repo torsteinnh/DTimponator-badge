@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DTimponator-badge)(type KiCad)(uri ${KIPRJMOD}/projectlib/DTimponator-badge.pretty)(options "")(descr ""))
+)
