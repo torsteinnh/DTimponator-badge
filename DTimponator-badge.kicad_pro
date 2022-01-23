@@ -125,10 +125,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "power_pin_not_driven|1143000|203200|0b416e97-2331-4dbc-b83f-e2ec815251c3|00000000-0000-0000-0000-000000000000",
-      "power_pin_not_driven|1143000|660400|38faa23e-9e95-4681-afab-56c90d0a56cf|00000000-0000-0000-0000-000000000000"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -333,7 +330,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "DTimponator-badge"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
